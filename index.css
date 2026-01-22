@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #111;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #ff9800;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* OFFER */
+.offer {
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 40px;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* CART */
+.cart {
+  padding: 40px;
+}
+
+.cart-item {
+  background: white;
+  margin-bottom: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
